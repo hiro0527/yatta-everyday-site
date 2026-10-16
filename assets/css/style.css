@@ -461,3 +461,15 @@ img {
     padding: 64px 0;
   }
 }
+
+/* P03: download guidance and small-screen accessibility */
+img { height: auto; }
+.download-note { color: var(--text); font-size: 14px; margin: 16px 0 0; }
+section[id] { scroll-margin-top: 100px; }
+a:focus-visible { outline: 3px solid #5145cd; outline-offset: 5px; }
+@media (max-width: 620px) {
+  .header-inner { flex-wrap: wrap; gap: 8px 18px; padding: 12px 0; }
+  .brand-mark { flex-shrink: 0; }
+  .actions .button { width: 100%; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
